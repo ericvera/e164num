@@ -1029,6 +1029,26 @@ __metadata:
   languageName: node
   linkType: hard
 
+"e164num@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "e164num@workspace:."
+  dependencies:
+    "@eslint/js": "npm:^9.1.1"
+    "@tsconfig/strictest": "npm:^2.0.5"
+    "@types/node": "npm:^20.12.8"
+    eslint: "npm:^9.1.1"
+    husky: "npm:^9.0.11"
+    lint-staged: "npm:^15.2.2"
+    pinst: "npm:^3.0.0"
+    prettier: "npm:^3.2.5"
+    typedoc: "npm:^0.25.13"
+    typedoc-plugin-markdown: "npm:^4.0.0-next.60"
+    typescript: "npm:^5.4.5"
+    typescript-eslint: "npm:^7.8.0"
+    vitest: "npm:^1.5.3"
+  languageName: unknown
+  linkType: soft
+
 "eastasianwidth@npm:^0.2.0":
   version: 0.2.0
   resolution: "eastasianwidth@npm:0.2.0"
@@ -1591,26 +1611,6 @@ __metadata:
   checksum: 10c0/2c787dcf74a837fc9a4fea7da907509d4bd9a289f4ea10ecc9d86279e4d4542b0f5f6443a619bccae19e265f2677172cc2b86aae5c932a35a330cc227d914605
   languageName: node
   linkType: hard
-
-"i-forgot-to-rename-my-package@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "i-forgot-to-rename-my-package@workspace:."
-  dependencies:
-    "@eslint/js": "npm:^9.1.1"
-    "@tsconfig/strictest": "npm:^2.0.5"
-    "@types/node": "npm:^20.12.8"
-    eslint: "npm:^9.1.1"
-    husky: "npm:^9.0.11"
-    lint-staged: "npm:^15.2.2"
-    pinst: "npm:^3.0.0"
-    prettier: "npm:^3.2.5"
-    typedoc: "npm:^0.25.13"
-    typedoc-plugin-markdown: "npm:^4.0.0-next.60"
-    typescript: "npm:^5.4.5"
-    typescript-eslint: "npm:^7.8.0"
-    vitest: "npm:^1.5.3"
-  languageName: unknown
-  linkType: soft
 
 "iconv-lite@npm:^0.6.2":
   version: 0.6.3

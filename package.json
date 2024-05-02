@@ -1,5 +1,5 @@
 {
-  "name": "i-forgot-to-rename-my-package",
+  "name": "e164num",
   "version": "0.0.1",
   "type": "module",
   "exports": {
@@ -49,9 +49,19 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/user/i-forgot-to-rename-my-package"
+    "url": "https://github.com/ericvera/e164num"
   },
-  "keywords": [],
+  "keywords": [
+    "phone",
+    "number",
+    "e164",
+    "international",
+    "format",
+    "parse",
+    "validate",
+    "mask",
+    "telephone"
+  ],
   "lint-staged": {
     "*.{ts,tsx,mjs}": "eslint --cache",
     "*": "prettier --ignore-unknown --write"

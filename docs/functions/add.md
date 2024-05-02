@@ -1,8 +1,8 @@
-[i-forgot-to-rename-my-package](../README.md) • Docs
+[e164num](../README.md) • Docs
 
 ---
 
-[i-forgot-to-rename-my-package](../README.md) / add
+[e164num](../README.md) / add
 
 # Function: add()
 
@@ -21,4 +21,4 @@
 
 ## Source
 
-[index.ts:1](https://github.com/ericvera/ts-lib-template/blob/main/src/index.ts#L1)
+[index.ts:1](https://github.com/ericvera/e164num/blob/main/src/index.ts#L1)
