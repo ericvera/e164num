@@ -62,6 +62,7 @@
     "mask",
     "telephone"
   ],
+  "license": "MIT",
   "lint-staged": {
     "*.{ts,tsx,mjs}": "eslint --cache",
     "*": "prettier --ignore-unknown --write"
