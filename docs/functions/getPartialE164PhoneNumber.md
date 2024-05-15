@@ -1,4 +1,4 @@
-[e164num](../README.md) • Docs
+[**e164num**](../README.md) • **Docs**
 
 ---
 
@@ -25,21 +25,17 @@ phone numbers in input fields as the user types.
 
 `string`
 
-## Example
+## Examples
 
 ```ts
 getPartialE164PhoneNumber('7')
 // returns '+17'
 ```
 
-## Example
-
 ```ts
 getPartialE164PhoneNumber('787123')
 // returns '+1787123'
 ```
-
-## Example
 
 ```ts
 getPartialE164PhoneNumber('787123', { code: '+34', maxLength: 12 })

@@ -1,4 +1,4 @@
-[e164num](../README.md) • Docs
+[**e164num**](../README.md) • **Docs**
 
 ---
 
