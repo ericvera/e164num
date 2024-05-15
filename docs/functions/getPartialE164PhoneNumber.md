@@ -14,12 +14,12 @@ phone numbers in input fields as the user types.
 
 ## Parameters
 
-| Parameter                      | Type                    | Description                                                                                                                                                                                                                                              |
-| :----------------------------- | :---------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `phoneNumber`                  | `undefined` \| `string` | The phone number to format.                                                                                                                                                                                                                              |
-| `defaultCountryInfo`           | `object`                | The default country code and max length for the<br />desired country. In the case where the code is matched, the phone number will<br />be truncated at maxLength including the plus sign. (Defaults to +1 and 12<br />characters for US phone numbers.) |
-| `defaultCountryInfo.code`      | `string`                | -                                                                                                                                                                                                                                                        |
-| `defaultCountryInfo.maxLength` | `number`                | -                                                                                                                                                                                                                                                        |
+| Parameter                      | Type                    | Description                                                                                                                                                                                                                               |
+| :----------------------------- | :---------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `phoneNumber`                  | `undefined` \| `string` | The phone number to format.                                                                                                                                                                                                               |
+| `defaultCountryInfo`           | `object`                | The default country code and max length for the desired country. In the case where the code is matched, the phone number will be truncated at maxLength including the plus sign. (Defaults to +1 and 12 characters for US phone numbers.) |
+| `defaultCountryInfo.code`      | `string`                | -                                                                                                                                                                                                                                         |
+| `defaultCountryInfo.maxLength` | `number`                | -                                                                                                                                                                                                                                         |
 
 ## Returns
 
