@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { getPartialE164PhoneNumber } from '.'
+import { getPartialE164PhoneNumber } from './index.js'
 
 it('returns e164 format number for US phone number without country code', () => {
   expect(getPartialE164PhoneNumber('6506651243')).toEqual('+16506651243')

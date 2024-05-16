@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { isValidE164PhoneNumber } from '.'
+import { isValidE164PhoneNumber } from './index.js'
 
 it('is invalid if masked', () => {
   expect(isValidE164PhoneNumber('+1******4444')).toBe(false)

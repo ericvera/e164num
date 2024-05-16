@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { formatPartialUSPhoneNumber } from '.'
+import { formatPartialUSPhoneNumber } from './index.js'
 
 it('returns a human friendly formatted phone for valid US phone numbers', () => {
   expect(formatPartialUSPhoneNumber('+14254531234')).toEqual('(425) 453-1234')

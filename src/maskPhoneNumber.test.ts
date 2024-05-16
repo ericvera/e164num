@@ -1,5 +1,5 @@
 import { expect, it } from 'vitest'
-import { maskPhoneNumber } from '.'
+import { maskPhoneNumber } from './index.js'
 
 it('works with US number', () => {
   expect(maskPhoneNumber('+11231231234')).toMatchInlineSnapshot(
