@@ -1,4 +1,4 @@
-# e164enum
+# e164num
 
 **Light validation and manipulation of E.164 phone numbers.**
 
