@@ -38,10 +38,12 @@ export const getPartialE164PhoneNumber = (
     return defaultCountryInfo.code
   }
 
+  // Remove all non-digit or + characters
+  let partialE164Number = phoneNumber.replace(/[^0-9+]/gm, '')
   // Remove all non-digit characters except a + at the beggining
-  let partialE164Number = phoneNumber.replace(/(?!^[+])[^0-9]/gm, '')
+  partialE164Number = partialE164Number.replace(/(?!^[+])[^0-9]/gm, '')
 
-  // Ithe number starts with the default country code, but not the + sign, add
+  // If the number starts with the default country code, but not the + sign, add
   // it
   if (partialE164Number.startsWith(defaultCountryInfo.code.slice(1))) {
     partialE164Number = `+${partialE164Number}`

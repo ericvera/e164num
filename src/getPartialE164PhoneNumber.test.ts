@@ -37,6 +37,10 @@ it('returns partial e164 for US formatted phone start of a number', () => {
   expect(getPartialE164PhoneNumber('(')).toEqual('+1')
 })
 
+it('returns + when going from US formatted that starts with (, but intend to enter international number', () => {
+  expect(getPartialE164PhoneNumber('(+')).toEqual('+')
+})
+
 it('returns US number when there is no country code', () => {
   expect(getPartialE164PhoneNumber('506659333')).toEqual('+1506659333')
 })
