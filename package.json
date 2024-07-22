@@ -29,18 +29,18 @@
   "devDependencies": {
     "@eslint/js": "^9.7.0",
     "@tsconfig/strictest": "^2.0.5",
-    "@types/node": "^20.14.10",
+    "@types/node": "^20.14.11",
     "eslint": "^9.7.0",
-    "husky": "^9.0.11",
+    "husky": "^9.1.1",
     "is-ci": "^3.0.1",
     "lint-staged": "^15.2.7",
     "pinst": "^3.0.0",
     "prettier": "^3.3.3",
-    "typedoc": "^0.26.4",
+    "typedoc": "^0.26.5",
     "typedoc-plugin-markdown": "^4.2.1",
     "typescript": "^5.5.3",
-    "typescript-eslint": "^7.16.0",
-    "vitest": "^2.0.2"
+    "typescript-eslint": "^7.16.1",
+    "vitest": "^2.0.4"
   },
   "prettier": {
     "tabWidth": 2,
