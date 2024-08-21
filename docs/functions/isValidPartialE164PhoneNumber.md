@@ -14,13 +14,13 @@ Returns false otherwise.
 ## Parameters
 
 | Parameter                | Type     | Description                                 |
-| :----------------------- | :------- | :------------------------------------------ |
+| ------------------------ | -------- | ------------------------------------------- |
 | `partialE164PhoneNumber` | `string` | The partial E.164 phone number to validate. |
 
 ## Returns
 
 `boolean`
 
-## Source
+## Defined in
 
 [isValidPartialE164PhoneNumber.ts:7](https://github.com/ericvera/e164num/blob/main/src/isValidPartialE164PhoneNumber.ts#L7)

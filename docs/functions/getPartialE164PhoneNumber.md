@@ -15,7 +15,7 @@ phone numbers in input fields as the user types.
 ## Parameters
 
 | Parameter                      | Type                    | Description                                                                                                                                                                                                                               |
-| :----------------------------- | :---------------------- | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| ------------------------------ | ----------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `phoneNumber`                  | `undefined` \| `string` | The phone number to format.                                                                                                                                                                                                               |
 | `defaultCountryInfo`           | `object`                | The default country code and max length for the desired country. In the case where the code is matched, the phone number will be truncated at maxLength including the plus sign. (Defaults to +1 and 12 characters for US phone numbers.) |
 | `defaultCountryInfo.code`      | `string`                | -                                                                                                                                                                                                                                         |
@@ -42,6 +42,6 @@ getPartialE164PhoneNumber('787123', { code: '+34', maxLength: 12 })
 // returns '+34787123'
 ```
 
-## Source
+## Defined in
 
 [getPartialE164PhoneNumber.ts:31](https://github.com/ericvera/e164num/blob/main/src/getPartialE164PhoneNumber.ts#L31)

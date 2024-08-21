@@ -15,13 +15,13 @@ types.
 ## Parameters
 
 | Parameter         | Type     | Description                 |
-| :---------------- | :------- | :-------------------------- |
+| ----------------- | -------- | --------------------------- |
 | `e164PhoneNumber` | `string` | The phone number to format. |
 
 ## Returns
 
 `string`
 
-## Source
+## Defined in
 
 [formatPartialUSPhoneNumber.ts:8](https://github.com/ericvera/e164num/blob/main/src/formatPartialUSPhoneNumber.ts#L8)

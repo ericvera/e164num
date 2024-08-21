@@ -15,7 +15,7 @@ last 3 digits visible. All others will be masked with an asterisk.
 ## Parameters
 
 | Parameter         | Type     | Description                    |
-| :---------------- | :------- | :----------------------------- |
+| ----------------- | -------- | ------------------------------ |
 | `e164PhoneNumber` | `string` | The E164 phone number to mask. |
 
 ## Returns
@@ -29,6 +29,6 @@ maskPhoneNumber('+17871234567')
 // returns '+1*******567'
 ```
 
-## Source
+## Defined in
 
 [maskPhoneNumber.ts:14](https://github.com/ericvera/e164num/blob/main/src/maskPhoneNumber.ts#L14)

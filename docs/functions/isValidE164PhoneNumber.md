@@ -16,13 +16,13 @@ phone numbers. Returns false otherwise.
 ## Parameters
 
 | Parameter         | Type     | Description                   |
-| :---------------- | :------- | :---------------------------- |
+| ----------------- | -------- | ----------------------------- |
 | `e164PhoneNumber` | `string` | The phone number to validate. |
 
 ## Returns
 
 `boolean`
 
-## Source
+## Defined in
 
 [isValidE164PhoneNumber.ts:9](https://github.com/ericvera/e164num/blob/main/src/isValidE164PhoneNumber.ts#L9)
