@@ -27,20 +27,20 @@
   },
   "packageManager": "yarn@4.3.0",
   "devDependencies": {
-    "@eslint/js": "^9.15.0",
+    "@eslint/js": "^9.16.0",
     "@tsconfig/strictest": "^2.0.5",
-    "@types/node": "^22.9.3",
-    "eslint": "^9.15.0",
+    "@types/node": "^22.10.1",
+    "eslint": "^9.16.0",
     "husky": "^9.1.7",
     "is-ci": "^3.0.1",
     "lint-staged": "^15.2.10",
     "pinst": "^3.0.0",
-    "prettier": "^3.3.3",
-    "typedoc": "^0.26.11",
-    "typedoc-plugin-markdown": "^4.2.10",
+    "prettier": "^3.4.1",
+    "typedoc": "^0.27.2",
+    "typedoc-plugin-markdown": "^4.3.1",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.15.0",
-    "vitest": "^2.1.5"
+    "typescript-eslint": "^8.16.0",
+    "vitest": "^2.1.7"
   },
   "prettier": {
     "tabWidth": 2,
