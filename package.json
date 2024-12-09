@@ -35,12 +35,12 @@
     "is-ci": "^3.0.1",
     "lint-staged": "^15.2.10",
     "pinst": "^3.0.0",
-    "prettier": "^3.4.1",
-    "typedoc": "^0.27.2",
-    "typedoc-plugin-markdown": "^4.3.1",
+    "prettier": "^3.4.2",
+    "typedoc": "^0.27.4",
+    "typedoc-plugin-markdown": "^4.3.2",
     "typescript": "^5.7.2",
-    "typescript-eslint": "^8.16.0",
-    "vitest": "^2.1.7"
+    "typescript-eslint": "^8.17.0",
+    "vitest": "^2.1.8"
   },
   "prettier": {
     "tabWidth": 2,
