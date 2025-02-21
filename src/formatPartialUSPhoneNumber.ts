@@ -20,6 +20,11 @@ export const formatPartialUSPhoneNumber = (e164PhoneNumber: string): string => {
     e164PhoneNumber.startsWith('+1') &&
     e164PhoneNumber.length <= ExpectedUSPhoneLength
   ) {
+    // Return empty string for just '+1'
+    if (e164PhoneNumber.length === 2) {
+      return ''
+    }
+
     result = '('
 
     // Anything longer than +1, add the first 3 digits
@@ -39,8 +44,8 @@ export const formatPartialUSPhoneNumber = (e164PhoneNumber: string): string => {
       )}`
     }
 
-    // Anything longer than '+1123123', add the - and up to 4 additional digits
-    if (e164PhoneNumber.length >= USPhoneSubscriberPrefixEndIndex) {
+    // Anything longer than '+11231231', add the - and up to 4 additional digits
+    if (e164PhoneNumber.length >= USPhoneSubscriberPrefixEndIndex + 1) {
       result += `-${e164PhoneNumber.substring(
         USPhoneSubscriberSuffixIndex,
         USPhoneSubscriberSuffixEndIndex,
