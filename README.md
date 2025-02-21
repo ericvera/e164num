@@ -7,11 +7,11 @@
 
 ## Features
 
-- Validate and format phone numbers in E.164 format
-- Real-time input handling with partial number support
-- Format US numbers with proper spacing and punctuation
-- Mask numbers for secure display
-- Zero dependencies and TypeScript ready
+- E.164 phone number validation and formatting
+- Real-time input handling
+- US number formatting with proper spacing
+- Secure number masking
+- TypeScript ready, zero dependencies
 
 ## Installation
 
