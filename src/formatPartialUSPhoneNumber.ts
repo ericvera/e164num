@@ -35,9 +35,9 @@ export const formatPartialUSPhoneNumber = (e164PhoneNumber: string): string => {
       )
     }
 
-    // Anything longer than '+1123', add the closing parenthesis and up to 3
+    // Anything longer than '+12223', add the closing parenthesis and up to 3
     // additional digits
-    if (e164PhoneNumber.length >= USPhoneAreaCodeEndIndex) {
+    if (e164PhoneNumber.length >= USPhoneAreaCodeEndIndex + 1) {
       result += `) ${e164PhoneNumber.substring(
         USPhoneSubscriberPrefixIndex,
         USPhoneSubscriberPrefixEndIndex,

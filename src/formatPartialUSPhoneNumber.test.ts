@@ -22,7 +22,7 @@ it('returns a partial human friendly formatted phone number', () => {
   expect(formatPartialUSPhoneNumber('+1')).toEqual('')
   expect(formatPartialUSPhoneNumber('+17')).toEqual('(7')
   expect(formatPartialUSPhoneNumber('+178')).toEqual('(78')
-  expect(formatPartialUSPhoneNumber('+1787')).toEqual('(787) ')
+  expect(formatPartialUSPhoneNumber('+1787')).toEqual('(787')
   expect(formatPartialUSPhoneNumber('+17871')).toEqual('(787) 1')
   expect(formatPartialUSPhoneNumber('+178712')).toEqual('(787) 12')
   expect(formatPartialUSPhoneNumber('+1787123')).toEqual('(787) 123')
