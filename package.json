@@ -19,7 +19,6 @@
     "lint": "eslint .",
     "test": "vitest run",
     "smoke": "yarn build && yarn lint && yarn test",
-    "docs": "typedoc && prettier --ignore-unknown --write docs/",
     "-- PRE-COMMIT HOOKS --": "",
     "localAfterInstall": "is-ci || husky || true",
     "prepublishOnly": "pinst --disable",
@@ -36,11 +35,9 @@
     "lint-staged": "^15.4.3",
     "pinst": "^3.0.0",
     "prettier": "^3.5.1",
-    "typedoc": "^0.27.7",
-    "typedoc-plugin-markdown": "^4.4.2",
     "typescript": "^5.7.3",
-    "typescript-eslint": "^8.24.0",
-    "vitest": "^3.0.5"
+    "typescript-eslint": "^8.24.1",
+    "vitest": "^3.0.6"
   },
   "prettier": {
     "tabWidth": 2,
