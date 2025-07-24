@@ -47,6 +47,8 @@ formatPartialUSPhoneNumber('+17871234567') // returns "(787) 123-4567"
 // Convert partial number to E.164 format (great for input fields)
 getPartialE164PhoneNumber('7871234567') // returns "+17871234567"
 getPartialE164PhoneNumber('787123', { code: '+34', maxLength: 12 }) // returns "+34787123"
+getPartialE164PhoneNumber('') // returns ""
+getPartialE164PhoneNumber(undefined) // returns ""
 
 // Mask a phone number for display
 maskPhoneNumber('+17871234567') // returns "+1*******567"
@@ -60,12 +62,13 @@ Validates if a string is a complete, valid E.164 phone number. For US numbers (+
 
 ### `isValidPartialE164PhoneNumber(partialE164PhoneNumber: string): boolean`
 
-Validates if a string follows the E.164 format rules but may be incomplete. This is useful for intermediate validation states, such as validating a phone number that's been pasted in or when you need to check if the current input could potentially become a valid E.164 number.
+Validates if a string follows the E.164 format rules but may be incomplete. This is useful for intermediate validation states, such as validating a phone number that's been pasted in or when you need to check if the current input could potentially become a valid E.164 number. Empty string is considered valid as a starting point for input.
 
 ### `getPartialE164PhoneNumber(phoneNumber: string | undefined, defaultCountryInfo?: { code: string, maxLength: number }): string`
 
 Converts a partial phone number to E.164 format. This is the ideal function for processing phone numbers in input fields as the user types, as it handles formatting and country code insertion in real-time.
 
+- Returns empty string for undefined or empty input
 - `defaultCountryInfo` defaults to `{ code: '+1', maxLength: 12 }` for US numbers
 - Automatically adds the country code if not present
 - Truncates numbers to the specified maximum length

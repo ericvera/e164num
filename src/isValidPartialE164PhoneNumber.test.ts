@@ -48,3 +48,7 @@ it('is invalid if it does not start with + (with US 1)', () => {
 it('is invalid if it does not start with + (with no US 1)', () => {
   expect(isValidPartialE164PhoneNumber('7871231234')).toBe(false)
 })
+
+it('is valid with empty string', () => {
+  expect(isValidPartialE164PhoneNumber('')).toBe(true)
+})

@@ -33,8 +33,8 @@ it('returns partial e164 for US formatted phone number', () => {
   expect(getPartialE164PhoneNumber('(787) 123-')).toEqual('+1787123')
 })
 
-it('returns partial e164 for US formatted phone start of a number', () => {
-  expect(getPartialE164PhoneNumber('(')).toEqual('+1')
+it('returns empty string for US formatted phone start that becomes empty after cleaning', () => {
+  expect(getPartialE164PhoneNumber('(')).toEqual('')
 })
 
 it('returns + when going from US formatted that starts with (, but intend to enter international number', () => {
@@ -45,18 +45,18 @@ it('returns US number when there is no country code', () => {
   expect(getPartialE164PhoneNumber('506659333')).toEqual('+1506659333')
 })
 
-it('returns +1 for undefined number', () => {
-  expect(getPartialE164PhoneNumber(undefined)).toEqual('+1')
+it('returns empty string for undefined number', () => {
+  expect(getPartialE164PhoneNumber(undefined)).toEqual('')
 })
 
-it('returns default country code for undefined number', () => {
+it('returns empty string for undefined number with custom default', () => {
   expect(
     getPartialE164PhoneNumber(undefined, { code: '+34', maxLength: 12 }),
-  ).toEqual('+34')
+  ).toEqual('')
 })
 
-it('returns +1 for empty number', () => {
-  expect(getPartialE164PhoneNumber('')).toEqual('+1')
+it('returns empty string for empty number', () => {
+  expect(getPartialE164PhoneNumber('')).toEqual('')
 })
 
 it('returns + for +', () => {

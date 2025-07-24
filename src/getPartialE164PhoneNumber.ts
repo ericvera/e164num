@@ -1,6 +1,6 @@
 /**
  * Returns a valid partial E.164 phone number based on the received phone
- * number or the default country code on undefined. This can be used to process
+ * number or empty string for undefined/empty input. This can be used to process
  * phone numbers in input fields as the user types.
  *
  * @param phoneNumber The phone number to format.
@@ -27,6 +27,18 @@
  * getPartialE164PhoneNumber('787123', {code: '+34', maxLength: 12})
  * // returns '+34787123'
  * ```
+ *
+ * @example
+ * ```ts
+ * getPartialE164PhoneNumber('')
+ * // returns ''
+ * ```
+ *
+ * @example
+ * ```ts
+ * getPartialE164PhoneNumber(undefined)
+ * // returns ''
+ * ```
  */
 export const getPartialE164PhoneNumber = (
   phoneNumber: string | undefined,
@@ -34,14 +46,19 @@ export const getPartialE164PhoneNumber = (
 ): string => {
   const MaxE164LengthWithPlus = 16
 
-  if (phoneNumber === undefined) {
-    return defaultCountryInfo.code
+  if (phoneNumber === undefined || phoneNumber === '') {
+    return ''
   }
 
   // Remove all non-digit or + characters
   let partialE164Number = phoneNumber.replace(/[^0-9+]/gm, '')
   // Remove all non-digit characters except a + at the beggining
   partialE164Number = partialE164Number.replace(/(?!^[+])[^0-9]/gm, '')
+
+  // Special case: if after cleaning we have an empty string, return empty
+  if (partialE164Number === '') {
+    return ''
+  }
 
   // If the number starts with the default country code, but not the + sign, add
   // it

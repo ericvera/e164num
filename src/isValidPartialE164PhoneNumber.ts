@@ -1,5 +1,6 @@
 /**
  * Returns true if the given phone number is a valid partial E.164 phone number.
+ * Empty string is considered valid as a starting point for input.
  * Returns false otherwise.
  *
  * @param partialE164PhoneNumber The partial E.164 phone number to validate.
